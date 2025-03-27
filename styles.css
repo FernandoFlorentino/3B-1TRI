@@ -6,6 +6,7 @@
     --laranja-claro: #FF862A;
     --branco: #ffffff;
     --preto: #000000;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -131,18 +132,17 @@ section {
     /* Garante que o conteúdo fica acima das imagens do background */
 }
 
+#galeria {
+    background-color: var(--preto);
 
-h2 {
+}
+
+.pt-5 {
     color: var(--branco);
     font-family: "Big Shoulders Inline", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-}
-
-#galeria {
-    background-color: var(--preto);
-
 }
 
 .fundo-galeria {
@@ -151,7 +151,7 @@ h2 {
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/maxresdefault.jpg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -159,7 +159,7 @@ h2 {
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: var(--preto);
     padding: 2rem;
     /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
@@ -170,13 +170,18 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: var(--branco);
     border: none;
     font-weight: bold;
+    color:var(--preto);
 }
 
 .form-control {
     background-color: #F1EDEF;
+}
+
+.mb-3 {
+    color:white;
 }
 
 .menu-acessibilidade{
@@ -203,4 +208,52 @@ h2 {
 
 .apresenta-lista{
     display:none;
+}
+
+.p-3 {
+    color:var(--branco);
+}
+
+.alto-contraste {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario,
+.alto-contraste .pt-5,
+.alto-contraste .p-2{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.alto-contraste .titulooqueé,
+.alto-contraste .p-2{
+    text-align: center;
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--preto);
+}
+
+.alto-contraste #tropicalia, 
+.alto-contraste #galeria{
+    background: none;
+}
+
+.alto-contraste .fundo-galeria {
+    background-color: var(--branco);
+}
+
+.alto-contraste .mb-3,
+.alto-contraste .titulooqueé{
+    color: var(--preto);
 }
